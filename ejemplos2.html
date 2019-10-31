@@ -30,7 +30,7 @@
 				esfera.position = {x:0, y:0};
 
 				if(window.DeviceOrientationEvent){
-					window.addEventListener("deviceOrientation", function(event){
+					window.addEventListener("deviceorientation", function(event){
 						esfera.velocity.y = Math.round(event.beta);
 						esfera.velocity.x = Math.round(event.gamma);
 					});
@@ -52,7 +52,7 @@
 					esfera.position.x = 0;
 				}
 				
-				if(esfera.position.y > (h-100)&&esfera.velocity.y>0){
+				if(esfera.position.y > (h-100) && esfera.velocity.y>0){
 					esfera.position.y = h-100;
 				}
 				if(esfera.position.y<0 && esfera.velocity.y <0){
