@@ -1,0 +1,132 @@
+body{
+	width: 900px;
+	height: auto;
+	margin: 0 auto;
+	background-image: url(../images/patterns-png-transparent.png), url(../images/abstract-2829965_960_720.png);
+	background-color: rgb(15, 67, 102);
+}
+
+header{
+	width: 900px;
+	height: 190px;
+	color:white;
+	background-image: url(../images/nirvana-nevermind-1b-1068x1068.jpg);
+	background-position: center -20vh;
+	background-size: 100%;
+}
+
+nav{
+	color:white;
+	width: 900px;
+	height: 50px;
+	background-color: rgba(72, 79, 92, 0.7);
+	padding-top: 5px;
+}
+
+nav ul li{
+	display: inline;
+	list-style-type: none;
+	margin-right: 50px;
+}
+
+aside{
+	width: 200px;
+	/*background: radial-gradient(ellipse at center, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 12%,rgba(109,0,25,1) 100%); */
+	background-color: rgb(143, 65, 65);
+	height: 900px;
+	float: left;
+	border-radius:  10px 10px 10px 10px;
+	/*text: 10px;*/
+	padding: 10px;
+	margin: 5px;
+}
+
+section{
+	width: 670px;
+	height: auto;
+	float: left;
+	/*Pirateado de https://www.colorzilla.com/gradient-editor/*/
+	background: rgb(116, 175, 199); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(116, 175, 199,1) 0%, rgba(116, 175, 199,1) 0%, rgba(35,83,138,1) 48%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgb(116, 175, 199) 0%,rgba(116, 175, 199,1) 0%,rgba(35,83,138,1) 48%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(116, 175, 199,1) 0%,rgba(116, 175, 199,1) 0%,rgba(35,83,138,1) 48%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+article{
+	height: 550px;
+	width: 300px;
+	background-color: rgba(125, 221, 245, 0.7);
+	float: left;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	padding: 5px;
+	text-align: center;
+	border-radius: 20px 20px 0px 0px;
+	box-shadow: 15px 15px 20px black;
+	transition: all 1.5s;
+}
+article:hover{
+	border-radius: 80px 80px 10px 10px;
+	box-shadow:  -15px -15px 40px red;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: rotate(360deg);
+}
+
+footer{
+	background-color: #FFFFFF;
+	border-radius: 25px 0px 45px 0px;
+	width: 900px;
+	height: 20px;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	padding-bottom: 20px;
+}
+
+@font-face{
+	font-family: miFuente1;
+	src: url(../fonts/font1.ttf);
+}
+@font-face{
+	font-family: miFuente2;
+	src: url(../fonts/font2.ttf);
+}
+@font-face{
+	font-family: miFuente3;
+	src: url(../fonts/font3.ttf);
+}
+@font-face{
+	font-family: miFuente4;
+	src: url(../fonts/font4.ttf);
+}
+
+h1{
+	font-family: miFuente1;
+	text-shadow: 5px 7px 10px rgb(33, 100, 155);
+	font-size: 4.375em;
+}
+
+h2{
+	font-family: miFuente2;
+}
+
+h3{
+	font-family: miFuente3;
+}
+
+h4, p{
+	font-family: miFuente4;
+}
+
+#videoMask{
+	/*mask: url(../images/text.svg);*/
+	/*-webkit-mask: url(../images/text.svg);*/
+	
+	mask: url(../images/ellipse.svg);
+	-webkit-mask: url(../images/ellipse.svg);
+	-moz-mask: url(../images/ellipse.svg);
+}
