@@ -12,10 +12,10 @@
 			function probandoOrientacion(){
 				if(!window.requestAnimationFrame){
 					window.requestAnimationFrame = (function(){
-						return window.webKitRequestAnimationFrame || window.mozRequestAnimationFrame  || function(callback, element){
+						return window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame  || function(callback, element){
 							window.setTimeout(callback, 1000/60);
 						}
-					})();
+					});
 				}
 			}
 
