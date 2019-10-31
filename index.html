@@ -6,6 +6,38 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<script>
 
+			//GeoLocalización
+			if(navigator.geolocation){
+				navigator.geolocation.getCurrentPosition(googleMapIt, gestionaErrores);
+			}else{
+				alert("No tenemos acceso a tu ubicación. Prueba con otro navegador.");
+			}
+
+			function googleMapIt(p){
+				var detalle = 'latitud '+ p.coords.latitude+" longitud: "+ p.coords.longitude;
+				console.log('Te encuentras aprox en las coordenadas: '+detalle);
+				var map = "https://maps.google.com/maps?z=15&output=embed&ll="+p.coords.latitude+","+ p.coords.longitude;
+				document.getElementById('geomap').src = map;
+			}
+			function gestionaErrores(err){
+				if(err.code==0){
+					alert('Error desconocido');
+					return;
+				}
+				if(err.code==1){
+					alert('No has permitido compartir tu ubicación.');
+					return;
+				}
+				if(err.code==2){
+					alert('No es posible leer tu ubicación, quizá no estás en un sitio seguro.');
+					return;
+				}
+				if(err.code==3){
+					alert('Tiempo de respuesta agotado.');
+					return;
+				}
+				alert('Error al obtener tu ubicación.');
+			}
 
 			function almacena(){
 				var texto = document.getElementById("datos").value;
@@ -336,6 +368,11 @@
 				<div id="cuadroAnimado">
 					<p>¡Me estoy animando Yeeeeiiii!</p>
 				</div>
+			</article>
+			<article>
+				<h3>Probando geolocalización con Maps</h3>
+				<iframe id="geomap" width="300" height="500" frameborder="no" src=""></iframe>
+
 			</article>
 			
 		</section>

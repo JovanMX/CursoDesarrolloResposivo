@@ -161,13 +161,13 @@ h4, p{
 		background-color: red;
 		left: 500px;
 		top:250px;
-		transform: rotate(-360);
+		transform:rotate(-360deg);
 	}
 	100%{
 		background-color: green;
 		left: 0px;
 		top:0px;
-		transform: skewX(50deg);
+		transform:skewX(50deg);
 	}
 }
 

@@ -1,1 +1,16 @@
+HTML5 core (día 1):
 -W3C Validator
+-https://schema.org/Person
+-https://es.lipsum.com/
+-https://www.colorzilla.com/gradient-editor/
+-http://html5test.com/
+-https://caniuse.com/
+-https://www.spacejam.com/archive/spacejam/movie/jam.htm
+-https://fonts.google.com/
+-
+
+Animaciones (día 2):
+-https://webdesigner.withgoogle.com/
+-canvas cheat sheet
+-https://git-scm.com/download/win
+-https://rogerdudler.github.io/git-guide/index.es.html
