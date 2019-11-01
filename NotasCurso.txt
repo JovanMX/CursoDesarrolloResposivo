@@ -14,4 +14,9 @@ Animaciones (día 2):
 -canvas cheat sheet
 -https://git-scm.com/download/win
 -https://rogerdudler.github.io/git-guide/index.es.html
+
+día 3
 -https://fontawesome.com/
+-https://jquerymobile.com/download/
+-https://getbootstrap.com/docs/4.0/examples/jumbotron/
+-https://build.phonegap.com/
