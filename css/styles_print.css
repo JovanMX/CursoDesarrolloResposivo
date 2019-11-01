@@ -1,0 +1,110 @@
+body{
+	width: 900px;
+	height: auto;
+	margin: 0 auto;
+	background-image: url(../images/patterns-png-transparent.png), url(../images/abstract-2829965_960_720.png);
+	background-color: rgb(15, 67, 102);
+}
+
+header{
+	width: 900px;
+	height: 190px;
+	color:white;
+	background-image: url(../images/nirvana-nevermind-1b-1068x1068.jpg);
+	background-position: center -20vh;
+	background-size: 100%;
+}
+
+nav{
+	color:white;
+	width: 900px;
+	height: 50px;
+	background-color: rgba(72, 79, 92, 0.7);
+	padding-top: 5px;
+}
+
+nav ul li{
+	display: inline;
+	list-style-type: none;
+	margin-right: 50px;
+}
+
+aside{
+	width: 200px;
+	/*background: radial-gradient(ellipse at center, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 12%,rgba(109,0,25,1) 100%); */
+	background-color: rgb(143, 65, 65);
+	height: 900px;
+	float: left;
+	border-radius:  10px 10px 10px 10px;
+	/*text: 10px;*/
+	padding: 10px;
+	margin: 5px;
+}
+
+section{
+	width: 670px;
+	height: auto;
+	float: left;
+}
+
+
+article{
+	height: 300px;
+	width: 600px;
+	background-color: rgba(125, 221, 245, 0.7);
+	float: left;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	padding: 5px;
+	text-align: center;
+	border-radius: 20px 20px 0px 0px;
+}
+footer{
+	background-color: #FFFFFF;
+	border-radius: 25px 0px 45px 0px;
+	width: 900px;
+	height: 20px;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	padding-bottom: 20px;
+}
+
+@font-face{
+	font-family: miFuente1;
+	src: url(../fonts/font1.ttf);
+}
+@font-face{
+	font-family: miFuente2;
+	src: url(../fonts/font2.ttf);
+}
+@font-face{
+	font-family: miFuente3;
+	src: url(../fonts/font3.ttf);
+}
+@font-face{
+	font-family: miFuente4;
+	src: url(../fonts/font4.ttf);
+}
+
+h1{
+	font-family: miFuente1;
+	text-shadow: 5px 7px 10px rgb(33, 100, 155);
+	font-size: 70px;
+}
+
+h2{
+	font-family: miFuente2;
+	font-size: 30px;
+}
+
+h3{
+	font-family: miFuente3;
+	font-size: 30px;
+}
+
+h4, p{
+	font-family: miFuente4;
+	font-size: 20px;
+}
