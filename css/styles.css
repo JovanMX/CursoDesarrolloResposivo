@@ -253,6 +253,8 @@ h4, p{
 		/*background: radial-gradient(ellipse at center, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 12%,rgba(109,0,25,1) 100%); */
 		background-color: greenyellow;
 		height: 200px;
+		padding: 0px;
+		margin: 0px;
 	}
 	
 	section{
