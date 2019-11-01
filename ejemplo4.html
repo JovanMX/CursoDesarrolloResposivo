@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+		<style>
+			body, html{
+				height: 100%;
+				margin: 0px;
+				font-size: 15px;
+				color: #777;
+			}
+
+			.fondoimg_1, .fondoimg_2, .fondoimg_3{
+				position: relative;
+				opacity: 0.65;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+
+			}
+			.fondoimg_1{
+				background-image: url("images/wall1.jpg");
+				min-height: 100%;
+			}
+			.fondoimg_2{
+				background-image: url("images/wall2.jpg");
+				min-height: 400px;
+			}
+			.fondoimg_3{
+				background-image: url("images/wall3.jpg");
+				min-height: 400px;
+			}
+			.texto{
+				position: absolute;
+				left: 0px;
+				top: 50%;
+				width: 100%;
+				text-align: center;
+				color: #000;
+			}
+			.texto span.border{
+				background-color: #111;
+				color: white;
+				padding: 18px;
+				font-size: 25px;
+			}
+			#contenedor1{
+				color: #777;
+				background-color: white;
+				text-align: center;
+				padding: 50px 80px;
+			}
+			.cuadrito{
+				position: absolute;
+				background-color: grey;
+				left:50px;
+				width: 150px;
+				height: 150px;
+				margin: 5px;
+				font-size: 20px;
+				color: white;
+				z-index: 1005;
+			}
+		</style>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script>
+			$(document).on("pagecreate", function(){
+				$(".cuadrito").on("swiperight", function(){
+					$(".cuadrito").animate({"left": "+=40px"}, "slow");
+				});
+				
+				$(".cuadrito").on("swipeleft", function(){
+					$(".cuadrito").animate({"left": "+=40px"}, "slow");
+				})
+				
+				$(".cuadrito").on("taphold", function(){
+					$(".cuadrito").animate({"width": "+=20px", "height": "+=20px"}, "slow");
+				})
+				
+				$(".cuadrito").on("tap", function(){
+					$(".cuadrito").animate({"width": "-=20px", "height": "-=20px"}, "slow");
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="fondoimg_1">
+			<div class="texto">
+				<span class="border">Bienvenido de nuevo</span>
+			</div>
+		</div>
+		<div id="contenedor1">
+			<h3 style="text-align: center;">¡Este es un demo de Parallax!</h3>
+			
+			<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+			<div class="cuadrito">
+				<p>Tócame</p>
+			</div>
+		</div>
+		<div class="fondoimg_2">
+				<div class="texto">
+					<span class="border" style="background-color: transparent; font-size: 25px; color: #FFF;">Sigue haciendo Scroll</span>
+				</div>
+		</div>
+		<div style="position: relative;">
+				<div id="contenedor2">
+					<p>Sigue haciendo Scroll</p>
+				</div>
+		</div>
+		
+		<div class="fondoimg_3">
+				<div class="texto">
+					<span class="border" style="background-color: transparent; font-size: 25px; color: #FFF;">Sigue haciendo Scroll UNA VEZ MÁS</span>
+				</div>
+		</div>
+		<div style="position: relative;">
+				<div id="contenedor3">
+					<p>Ya casi llegas, Venga!</p>
+				</div>
+		</div>
+		
+		<div class="fondoimg_1">
+				<div class="texto">
+					<span class="border">Ya llegaste</span>
+				</div>
+		</div>
+		
+	</body>
+</html>
