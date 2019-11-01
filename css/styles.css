@@ -212,3 +212,92 @@ h4, p{
 	-webkit-transition: all;
 	-moz-transition: all;
 }
+
+
+
+@media screen and (max-width:760px){
+
+
+	body{
+		width: 100%;
+		background-image: none;
+		background-color: white;
+	}
+	
+	header{
+		background-color: black;
+		width: 100%;
+		height: 60px;
+		position: fixed;
+		color:white;
+		background-size: 50%;
+		top: 0px;
+		z-index: 10000;
+		font-size: 13;
+	}
+	
+	nav{
+		width: 100%;
+		padding-top: 75px;
+		z-index: 10001;
+		height: 120px;
+	}
+	
+	nav ul li{
+		display: block;
+		list-style-type: none;
+	}
+	
+	aside{
+		width: 100%;
+		/*background: radial-gradient(ellipse at center, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 12%,rgba(109,0,25,1) 100%); */
+		background-color: greenyellow;
+		height: 200px;
+	}
+	
+	section{
+		width: 100%;
+		background: rgb(116, 175, 199);
+	}
+	
+	
+	article{
+		width: 90%;
+		background-color: rgba(125, 221, 245, 0.7);
+		text-align: center;
+		border-radius: 0px 0px 20px 20px;
+		box-shadow: none;
+		transition: none;
+	}
+	
+	article:hover{
+		border-radius: none;
+		box-shadow:  none;
+		transform:none;
+		-webkit-transform: none;
+		-moz-transform: none;
+	}
+	
+	footer{
+		background-color: #FFFFFF;
+		border-radius: 0px 15px 0px 15px;
+		width: 100%;
+		height: auto;
+	}
+	
+	h1{
+		font-size: 1.813em;
+	}
+	
+	h2{
+		font-size: 1.613em;
+	}
+	
+	h3{
+		font-size: 1.250em;
+	}
+	
+	h4, p{
+		font-size: 1em;
+	}
+}

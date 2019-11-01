@@ -14,3 +14,4 @@ Animaciones (día 2):
 -canvas cheat sheet
 -https://git-scm.com/download/win
 -https://rogerdudler.github.io/git-guide/index.es.html
+-https://fontawesome.com/
